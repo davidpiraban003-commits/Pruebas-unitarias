@@ -1,0 +1,13 @@
+[project]
+name = "library-system"
+version = "1.0.0"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "--cov=library --cov-report=term-missing --cov-fail-under=95"
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
